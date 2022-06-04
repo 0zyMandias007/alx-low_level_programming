@@ -2,29 +2,27 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Prints the last digit of a number and checks to see if
- * its greater of less than 5 or if its equal to 0.
+ * main - Prints out the last digit of a number to see if 
+ * its greater or less than 5 and or eqaul to 0
  *
  * Return: Always 0 (Success)
- */ 
+ */
 int main(void)
 {
-	int n;
+	int n, numb;
 
 	srand(time(0));
-	n = rand() - RAND_MAX /2;
-
-	if ((n % 10) > 5)
+	n = rand() - RAND_MAX / 2;
+	numb = n % 10;
+	if (numb > 5)
+		printf("Last digit of %d is %d and is greater than 5\n", n, numb);
+	else if (numb == 0)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10 );
-	}
-	else if ((n % 10) < 6 && (n % 10) != 0 )
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+		printf("last digit of %d is %d and is 0\n", n, numb);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, numb);
 	}
 	return (0);
 }
