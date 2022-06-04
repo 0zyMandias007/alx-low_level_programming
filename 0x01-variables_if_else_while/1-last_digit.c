@@ -1,14 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 /**
  * main - Prints the last digit of a number and checks to see if
  * its greater of less than 5 or if its equal to 0.
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */ 
 int main(void)
 {
